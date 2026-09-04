@@ -1,0 +1,57 @@
+# Wiz Freight
+
+> Wiz Freight (Wiz Logtec Solutions Private Limited) was a Chennai, India based digital
+> freight forwarder founded in 2020. It offered ocean, air and surface freight booking,
+> instant rate discovery, live shipment tracking, digital documentation and multi-currency
+> freight payments through its own platform. Its public surface is gone as of September
+> 2026 and no API was ever published on a reachable host.
+
+## Status
+
+- Company: Wiz Freight / Wiz Logtec Solutions Private Limited, Chennai, Tamil Nadu, India
+- Founded: 2020, by Ramkumar Ramachandran and Ramkumar Govindarajan
+- Funding: approximately $58.6M (Tiger Global Management, Nippon Express Holdings,
+  SBI Investment, Stride Ventures, Foundamental, Axilor Ventures)
+- Current state: defunct / parked. Trade press reported in September 2025 that export
+  bookings had been suspended amid an executive exodus. https://wizfreight.com/ now serves
+  a GoDaddy Website Builder "Launching Soon" placeholder, the former booking portal path
+  https://wizfreight.com/bookings returns 404, and the platform host sit.wizfreight.net no
+  longer resolves (NXDOMAIN).
+
+## API surface
+
+There is none, and there is no evidence one was ever published publicly.
+
+- No developer portal, API reference or getting-started page on any reachable host.
+- No OpenAPI, Swagger, GraphQL SDL, AsyncAPI, gRPC/Protobuf or WSDL contract found. Probed
+  /openapi.json, /openapi.yaml, /swagger.json, /v1/openapi.json, /api-docs, /docs, /redoc
+  and /graphql on wizfreight.com: all 404.
+- No /.well-known/ documents. All nine probed paths 404 (see
+  well-known/wiz-freight-well-known.yml).
+- No A2A agent card at /.well-known/agent-card.json or /.well-known/agent.json (404).
+- No MCP server, hosted or stdio.
+- No first-party SDK on npm, PyPI or RubyGems.
+- No GitHub organization (https://api.github.com/orgs/wizfreight returns 404).
+- api., developer., docs., app., portal., track. and my. subdomains of wizfreight.com do
+  not resolve.
+
+## Links
+
+- Website (placeholder): https://wizfreight.com/
+- LinkedIn: https://in.linkedin.com/company/wizfreight
+
+## Artifacts in this profile
+
+- well-known/wiz-freight-well-known.yml — probe record, recorded absence
+- security/wiz-freight-domain-security.yml — TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe
+
+## Not this company
+
+`wizint.com` presents itself as "Wiz Freight Corp", a separate American freight forwarder
+founded in 1994 by Renato F Ferretti and based in Medley, Florida. It is a different
+company and nothing on that host belongs to this profile.
+
+---
+generated: 2026-09-04
+method: generated
+source: apis.yml + well-known/wiz-freight-well-known.yml + live probes of wizfreight.com

@@ -1,0 +1,77 @@
+generated: '2026-09-04'
+method: probed
+source: https://wizfreight.com/.well-known/
+name: Wiz Freight well-known probe
+description: >-
+  Probe of the RFC 8615 /.well-known/ path list on every host this record knows. Wiz
+  Freight has no API baseURL and no OpenAPI servers[] host, so the only hosts are the
+  registrable domain and its www alias. Every path returned 404 with the GoDaddy Website
+  Builder catch-all HTML shell that now serves wizfreight.com, so no document was served
+  and NO WellKnown or SecurityTxt pointer is emitted. A recorded absence is the finding.
+hosts:
+- host: wizfreight.com
+  note: >-
+    Apex serves a GoDaddy Website Builder "Launching Soon" placeholder; all unknown paths
+    answer 404 with an 89KB HTML shell, so a 404 here is a genuine absence, not a soft-404
+    masking a document.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+- host: www.wizfreight.com
+  note: >-
+    Every /.well-known/ path 301-redirects to the apex host, which answers 404. No document
+    is served from the www alias.
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 301
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 301
+    file: null
+  - path: /.well-known/api-catalog
+    status: 301
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 301
+    file: null
+  - path: /.well-known/agent.json
+    status: 301
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 301
+    file: null
+checked: '2026-09-04'
